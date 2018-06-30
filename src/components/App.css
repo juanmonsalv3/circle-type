@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800');
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+.container{
+	width: 100%;
+	padding-bottom: 40px;
+	min-width: 590px;
+	position: relative;
+	text-align: center;
+}
+.clr{
+	clear: both;
+}
+.container > header{
+	padding: 20px;
+	margin: 0px 20px 20px 20px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: center;
+	font-family:"Courier New", Courier, monospace;
+
+}
+.container > header h1{
+	font-size: 68px;
+	line-height: 70px;
+	position: relative;
+	font-weight: 800;
+	letter-spacing: 2px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1), 0 0 1px #D26A44;
+    padding: 0px 0px 60px 0px;
+
+}
+.container > header h1 span:nth-child(4),
+.container > header h1 span:nth-child(5),
+.container > header h1 span:nth-child(6),
+.container > header h1 span:nth-child(7){
+	color: #452716;
+	text-shadow: 1px 0px 1px rgba(255,255,255, 0.4), 0 0 1px #452716;
+}
+.container > header h2{
+	font-size: 18px;
+	line-height: 30px;
+	color: #F8ECBF;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+}
+section{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.example{
+  width: 850px;
+  height: 268px;
+  float: left;
+  border: 1px solid #000;
+  position: relative;
+}
+.example h3{
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+  text-transform: uppercase;
+  width: 100%;
+  position: absolute;
+  color: red;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.example h3#example1{
+  margin-top: 0;
+  margin-bottom: 60px;
+  top: 30%;
+}
+.example h3#example2{
+  margin-top: 65px;
+  margin-bottom: 0;
+  bottom: 30%
+}
+
+.collarcontainer{
+  position: relative;
+  z-index: -1;
+}
+.collar-img{
+  display: inline-block;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #000;
+}
+
+.inputs{
+  clear: both;
+}
