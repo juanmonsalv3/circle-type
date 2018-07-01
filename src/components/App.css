@@ -63,24 +63,20 @@ section{
 .example h3{
 	font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
-  font-size: 50px;
+  font-size: 46px;
   text-transform: uppercase;
   width: 100%;
   position: absolute;
-  color: red;
-
+	color: red;
+	margin: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .example h3#example1{
-  margin-top: 0;
-  margin-bottom: 60px;
   top: 30%;
 }
 .example h3#example2{
-  margin-top: 65px;
-  margin-bottom: 0;
   bottom: 30%
 }
 

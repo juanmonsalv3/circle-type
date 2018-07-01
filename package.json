@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "circletype": "^2.3.0",
+    "html2canvas": "^1.0.0-alpha.12",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import CircleType from 'circletype';
 import Input from './Input';
+import html2canvas from 'html2canvas';
 
 class App extends Component {
   constructor(props) {
@@ -10,8 +11,8 @@ class App extends Component {
     this.state = {
       text1: '',
       text2: '',
-      radius1: 150,
-      radius2: 200
+      radius1: 195,
+      radius2: 185
     };
   }
   componentDidUpdate() {
@@ -19,16 +20,11 @@ class App extends Component {
   }
 
   renderText() {
-    let top = document.getElementById('example1');
-    let bottom = document.getElementById('example2');
-
     new CircleType(document.getElementById('example1'))
       .radius(this.state.radius1).forceHeight(true);
     new CircleType(document.getElementById('example2'))
       .dir(-1)
       .radius(this.state.radius2);
-
-
   }
 
   render() {
@@ -36,6 +32,12 @@ class App extends Component {
       const state = {};
       state[id] = text;
       this.setState(state);
+    };
+
+    const renderCanvas = () => {
+      html2canvas(document.getElementById('sub1')).then(function(canvas) {
+        document.body.appendChild(canvas);
+      });
     };
 
     return (
@@ -62,6 +64,7 @@ class App extends Component {
           <Input id="text2" onChange={onTextChange}/>
           <Input id="radius1" onChange={onTextChange}/>
           <Input id="radius2" onChange={onTextChange}/>
+          <button onClick={renderCanvas}>Convert to canvas</button>
         </div>
       </div>
     );
